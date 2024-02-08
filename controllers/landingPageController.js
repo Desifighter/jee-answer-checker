@@ -90,7 +90,7 @@ export const landingPageController = async (req, res) => {
       });
     // console.log(finalArr);
     
-    console.log(day + shift + ".xlsx");
+    console.log(day + toString(shift) + ".xlsx");
     const workbook = xlsx.readFile(day+shift+".xlsx"); // Or exceljs.readFileSync('path/to/your/file.xlsx')
     const sheetName = workbook.SheetNames[0]; // Assume the first sheet
     const worksheet = workbook.Sheets[sheetName];

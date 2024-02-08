@@ -7,7 +7,7 @@ import homeRoute from "./routes/homeRoute.js";
 
 // connect database
 
-connectDB();
+// connectDB();
 
 // rest object 
 const app = express();
