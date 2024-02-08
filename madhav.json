@@ -1,0 +1,1595 @@
+{
+    "success": true,
+    "finalArr": [
+        {
+            "text": "Q.1Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591201Option 1 ID :4058593798Option 2 ID :4058593795Option 3 ID :4058593797Option 4 ID :4058593796Status :AnsweredChosen Option :2",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591201",
+            "optionIds": [
+                "4058593798",
+                "4058593795",
+                "4058593797",
+                "4058593796"
+            ],
+            "chosenOptionId": "2",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593795",
+                "4058593796",
+                "4058593797",
+                "4058593798"
+            ],
+            "actualChoosenOption": 1
+        },
+        {
+            "text": "Q.2Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591206Option 1 ID :4058593817Option 2 ID :4058593815Option 3 ID :4058593816Option 4 ID :4058593818Status :Not Attempted and Marked For ReviewChosen Option : --",
+            "questionType": 1,
+            "answerStatus": 0,
+            "questionId": "4058591206",
+            "optionIds": [
+                "4058593817",
+                "4058593815",
+                "4058593816",
+                "4058593818"
+            ],
+            "chosenOptionId": null,
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593815",
+                "4058593816",
+                "4058593817",
+                "4058593818"
+            ],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.3Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591210Option 1 ID :4058593834Option 2 ID :4058593833Option 3 ID :4058593831Option 4 ID :4058593832Status :AnsweredChosen Option :4",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591210",
+            "optionIds": [
+                "4058593834",
+                "4058593833",
+                "4058593831",
+                "4058593832"
+            ],
+            "chosenOptionId": "4",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593831",
+                "4058593832",
+                "4058593833",
+                "4058593834"
+            ],
+            "actualChoosenOption": 2
+        },
+        {
+            "text": "Q.4Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591203Option 1 ID :4058593804Option 2 ID :4058593803Option 3 ID :4058593806Option 4 ID :4058593805Status :Not Attempted and Marked For ReviewChosen Option : --",
+            "questionType": 1,
+            "answerStatus": 0,
+            "questionId": "4058591203",
+            "optionIds": [
+                "4058593804",
+                "4058593803",
+                "4058593806",
+                "4058593805"
+            ],
+            "chosenOptionId": null,
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593803",
+                "4058593804",
+                "4058593805",
+                "4058593806"
+            ],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.5Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591207Option 1 ID :4058593820Option 2 ID :4058593821Option 3 ID :4058593822Option 4 ID :4058593819Status :Not Attempted and Marked For ReviewChosen Option : --",
+            "questionType": 1,
+            "answerStatus": 0,
+            "questionId": "4058591207",
+            "optionIds": [
+                "4058593820",
+                "4058593821",
+                "4058593822",
+                "4058593819"
+            ],
+            "chosenOptionId": null,
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593819",
+                "4058593820",
+                "4058593821",
+                "4058593822"
+            ],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.6Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591202Option 1 ID :4058593799Option 2 ID :4058593802Option 3 ID :4058593800Option 4 ID :4058593801Status :Not Attempted and Marked For ReviewChosen Option : --",
+            "questionType": 1,
+            "answerStatus": 0,
+            "questionId": "4058591202",
+            "optionIds": [
+                "4058593799",
+                "4058593802",
+                "4058593800",
+                "4058593801"
+            ],
+            "chosenOptionId": null,
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593799",
+                "4058593800",
+                "4058593801",
+                "4058593802"
+            ],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.7Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591195Option 1 ID :4058593773Option 2 ID :4058593771Option 3 ID :4058593772Option 4 ID :4058593774Status :Not Attempted and Marked For ReviewChosen Option : --",
+            "questionType": 1,
+            "answerStatus": 0,
+            "questionId": "4058591195",
+            "optionIds": [
+                "4058593773",
+                "4058593771",
+                "4058593772",
+                "4058593774"
+            ],
+            "chosenOptionId": null,
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593771",
+                "4058593772",
+                "4058593773",
+                "4058593774"
+            ],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.8Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591200Option 1 ID :4058593794Option 2 ID :4058593793Option 3 ID :4058593792Option 4 ID :4058593791Status :AnsweredChosen Option :3",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591200",
+            "optionIds": [
+                "4058593794",
+                "4058593793",
+                "4058593792",
+                "4058593791"
+            ],
+            "chosenOptionId": "3",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593791",
+                "4058593792",
+                "4058593793",
+                "4058593794"
+            ],
+            "actualChoosenOption": 2
+        },
+        {
+            "text": "Q.9Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591205Option 1 ID :4058593813Option 2 ID :4058593812Option 3 ID :4058593811Option 4 ID :4058593814Status :AnsweredChosen Option :1",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591205",
+            "optionIds": [
+                "4058593813",
+                "4058593812",
+                "4058593811",
+                "4058593814"
+            ],
+            "chosenOptionId": "1",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593811",
+                "4058593812",
+                "4058593813",
+                "4058593814"
+            ],
+            "actualChoosenOption": 3
+        },
+        {
+            "text": "Q.10Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591212Option 1 ID :4058593840Option 2 ID :4058593842Option 3 ID :4058593839Option 4 ID :4058593841Status :AnsweredChosen Option :4",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591212",
+            "optionIds": [
+                "4058593840",
+                "4058593842",
+                "4058593839",
+                "4058593841"
+            ],
+            "chosenOptionId": "4",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593839",
+                "4058593840",
+                "4058593841",
+                "4058593842"
+            ],
+            "actualChoosenOption": 3
+        },
+        {
+            "text": "Q.11Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591213Option 1 ID :4058593844Option 2 ID :4058593845Option 3 ID :4058593843Option 4 ID :4058593846Status :AnsweredChosen Option :1",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591213",
+            "optionIds": [
+                "4058593844",
+                "4058593845",
+                "4058593843",
+                "4058593846"
+            ],
+            "chosenOptionId": "1",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593843",
+                "4058593844",
+                "4058593845",
+                "4058593846"
+            ],
+            "actualChoosenOption": 2
+        },
+        {
+            "text": "Q.12Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591211Option 1 ID :4058593835Option 2 ID :4058593837Option 3 ID :4058593838Option 4 ID :4058593836Status :AnsweredChosen Option :1",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591211",
+            "optionIds": [
+                "4058593835",
+                "4058593837",
+                "4058593838",
+                "4058593836"
+            ],
+            "chosenOptionId": "1",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593835",
+                "4058593836",
+                "4058593837",
+                "4058593838"
+            ],
+            "actualChoosenOption": 1
+        },
+        {
+            "text": "Q.13Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591204Option 1 ID :4058593807Option 2 ID :4058593810Option 3 ID :4058593809Option 4 ID :4058593808Status :Not AnsweredChosen Option : --",
+            "questionType": 1,
+            "answerStatus": 0,
+            "questionId": "4058591204",
+            "optionIds": [
+                "4058593807",
+                "4058593810",
+                "4058593809",
+                "4058593808"
+            ],
+            "chosenOptionId": null,
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593807",
+                "4058593808",
+                "4058593809",
+                "4058593810"
+            ],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.14Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591196Option 1 ID :4058593778Option 2 ID :4058593775Option 3 ID :4058593777Option 4 ID :4058593776Status :Not AnsweredChosen Option : --",
+            "questionType": 1,
+            "answerStatus": 0,
+            "questionId": "4058591196",
+            "optionIds": [
+                "4058593778",
+                "4058593775",
+                "4058593777",
+                "4058593776"
+            ],
+            "chosenOptionId": null,
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593775",
+                "4058593776",
+                "4058593777",
+                "4058593778"
+            ],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.15Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591214Option 1 ID :4058593848Option 2 ID :4058593847Option 3 ID :4058593850Option 4 ID :4058593849Status :Not AnsweredChosen Option : --",
+            "questionType": 1,
+            "answerStatus": 0,
+            "questionId": "4058591214",
+            "optionIds": [
+                "4058593848",
+                "4058593847",
+                "4058593850",
+                "4058593849"
+            ],
+            "chosenOptionId": null,
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593847",
+                "4058593848",
+                "4058593849",
+                "4058593850"
+            ],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.16Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591208Option 1 ID :4058593824Option 2 ID :4058593826Option 3 ID :4058593825Option 4 ID :4058593823Status :AnsweredChosen Option :3",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591208",
+            "optionIds": [
+                "4058593824",
+                "4058593826",
+                "4058593825",
+                "4058593823"
+            ],
+            "chosenOptionId": "3",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593823",
+                "4058593824",
+                "4058593825",
+                "4058593826"
+            ],
+            "actualChoosenOption": 3
+        },
+        {
+            "text": "Q.17Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591197Option 1 ID :4058593780Option 2 ID :4058593779Option 3 ID :4058593781Option 4 ID :4058593782Status :AnsweredChosen Option :2",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591197",
+            "optionIds": [
+                "4058593780",
+                "4058593779",
+                "4058593781",
+                "4058593782"
+            ],
+            "chosenOptionId": "2",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593779",
+                "4058593780",
+                "4058593781",
+                "4058593782"
+            ],
+            "actualChoosenOption": 1
+        },
+        {
+            "text": "Q.18Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591199Option 1 ID :4058593790Option 2 ID :4058593788Option 3 ID :4058593789Option 4 ID :4058593787Status :Not AnsweredChosen Option : --",
+            "questionType": 1,
+            "answerStatus": 0,
+            "questionId": "4058591199",
+            "optionIds": [
+                "4058593790",
+                "4058593788",
+                "4058593789",
+                "4058593787"
+            ],
+            "chosenOptionId": null,
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593787",
+                "4058593788",
+                "4058593789",
+                "4058593790"
+            ],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.19Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591209Option 1 ID :4058593828Option 2 ID :4058593830Option 3 ID :4058593829Option 4 ID :4058593827Status :AnsweredChosen Option :3",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591209",
+            "optionIds": [
+                "4058593828",
+                "4058593830",
+                "4058593829",
+                "4058593827"
+            ],
+            "chosenOptionId": "3",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593827",
+                "4058593828",
+                "4058593829",
+                "4058593830"
+            ],
+            "actualChoosenOption": 3
+        },
+        {
+            "text": "Q.20Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591198Option 1 ID :4058593786Option 2 ID :4058593785Option 3 ID :4058593784Option 4 ID :4058593783Status :AnsweredChosen Option :1",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591198",
+            "optionIds": [
+                "4058593786",
+                "4058593785",
+                "4058593784",
+                "4058593783"
+            ],
+            "chosenOptionId": "1",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593783",
+                "4058593784",
+                "4058593785",
+                "4058593786"
+            ],
+            "actualChoosenOption": 4
+        },
+        {
+            "text": "Q.21Given Answer : -- Question Type :SAQuestion ID :4058591216Status :Not Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591216",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "--",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.22Given Answer : -- Question Type :SAQuestion ID :4058591215Status :Not Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591215",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "--",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.23Given Answer : -- Question Type :SAQuestion ID :4058591222Status :Not Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591222",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "--",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.24Given Answer : -- Question Type :SAQuestion ID :4058591220Status :Not Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591220",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "--",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.25Given Answer : -- Question Type :SAQuestion ID :4058591218Status :Not Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591218",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "--",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.26Given Answer : -- Question Type :SAQuestion ID :4058591219Status :Not Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591219",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "--",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.27Given Answer : -- Question Type :SAQuestion ID :4058591221Status :Not Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591221",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "--",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.28Given Answer : -- Question Type :SAQuestion ID :4058591217Status :Not Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591217",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "--",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.29Given Answer : -- Question Type :SAQuestion ID :4058591224Status :Not Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591224",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "--",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.30Given Answer : -- Question Type :SAQuestion ID :4058591223Status :Not Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591223",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "--",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.31Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591242Option 1 ID :4058593931Option 2 ID :4058593929Option 3 ID :4058593930Option 4 ID :4058593932Status :AnsweredChosen Option :3",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591242",
+            "optionIds": [
+                "4058593931",
+                "4058593929",
+                "4058593930",
+                "4058593932"
+            ],
+            "chosenOptionId": "3",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593929",
+                "4058593930",
+                "4058593931",
+                "4058593932"
+            ],
+            "actualChoosenOption": 2
+        },
+        {
+            "text": "Q.32Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591236Option 1 ID :4058593906Option 2 ID :4058593907Option 3 ID :4058593905Option 4 ID :4058593908Status :AnsweredChosen Option :3",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591236",
+            "optionIds": [
+                "4058593906",
+                "4058593907",
+                "4058593905",
+                "4058593908"
+            ],
+            "chosenOptionId": "3",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593905",
+                "4058593906",
+                "4058593907",
+                "4058593908"
+            ],
+            "actualChoosenOption": 1
+        },
+        {
+            "text": "Q.33Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591235Option 1 ID :4058593901Option 2 ID :4058593902Option 3 ID :4058593903Option 4 ID :4058593904Status :Not AnsweredChosen Option : --",
+            "questionType": 1,
+            "answerStatus": 0,
+            "questionId": "4058591235",
+            "optionIds": [
+                "4058593901",
+                "4058593902",
+                "4058593903",
+                "4058593904"
+            ],
+            "chosenOptionId": null,
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593901",
+                "4058593902",
+                "4058593903",
+                "4058593904"
+            ],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.34Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591239Option 1 ID :4058593919Option 2 ID :4058593917Option 3 ID :4058593918Option 4 ID :4058593920Status :AnsweredChosen Option :1",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591239",
+            "optionIds": [
+                "4058593919",
+                "4058593917",
+                "4058593918",
+                "4058593920"
+            ],
+            "chosenOptionId": "1",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593917",
+                "4058593918",
+                "4058593919",
+                "4058593920"
+            ],
+            "actualChoosenOption": 3
+        },
+        {
+            "text": "Q.35Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591241Option 1 ID :4058593925Option 2 ID :4058593926Option 3 ID :4058593927Option 4 ID :4058593928Status :AnsweredChosen Option :2",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591241",
+            "optionIds": [
+                "4058593925",
+                "4058593926",
+                "4058593927",
+                "4058593928"
+            ],
+            "chosenOptionId": "2",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593925",
+                "4058593926",
+                "4058593927",
+                "4058593928"
+            ],
+            "actualChoosenOption": 2
+        },
+        {
+            "text": "Q.36Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591225Option 1 ID :4058593864Option 2 ID :4058593862Option 3 ID :4058593863Option 4 ID :4058593861Status :AnsweredChosen Option :2",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591225",
+            "optionIds": [
+                "4058593864",
+                "4058593862",
+                "4058593863",
+                "4058593861"
+            ],
+            "chosenOptionId": "2",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593861",
+                "4058593862",
+                "4058593863",
+                "4058593864"
+            ],
+            "actualChoosenOption": 2
+        },
+        {
+            "text": "Q.37Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591231Option 1 ID :4058593888Option 2 ID :4058593886Option 3 ID :4058593887Option 4 ID :4058593885Status :Not AnsweredChosen Option : --",
+            "questionType": 1,
+            "answerStatus": 0,
+            "questionId": "4058591231",
+            "optionIds": [
+                "4058593888",
+                "4058593886",
+                "4058593887",
+                "4058593885"
+            ],
+            "chosenOptionId": null,
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593885",
+                "4058593886",
+                "4058593887",
+                "4058593888"
+            ],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.38Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591240Option 1 ID :4058593921Option 2 ID :4058593924Option 3 ID :4058593923Option 4 ID :4058593922Status :AnsweredChosen Option :1",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591240",
+            "optionIds": [
+                "4058593921",
+                "4058593924",
+                "4058593923",
+                "4058593922"
+            ],
+            "chosenOptionId": "1",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593921",
+                "4058593922",
+                "4058593923",
+                "4058593924"
+            ],
+            "actualChoosenOption": 1
+        },
+        {
+            "text": "Q.39Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591229Option 1 ID :4058593880Option 2 ID :4058593877Option 3 ID :4058593879Option 4 ID :4058593878Status :Not AnsweredChosen Option : --",
+            "questionType": 1,
+            "answerStatus": 0,
+            "questionId": "4058591229",
+            "optionIds": [
+                "4058593880",
+                "4058593877",
+                "4058593879",
+                "4058593878"
+            ],
+            "chosenOptionId": null,
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593877",
+                "4058593878",
+                "4058593879",
+                "4058593880"
+            ],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.40Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591226Option 1 ID :4058593867Option 2 ID :4058593866Option 3 ID :4058593865Option 4 ID :4058593868Status :AnsweredChosen Option :1",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591226",
+            "optionIds": [
+                "4058593867",
+                "4058593866",
+                "4058593865",
+                "4058593868"
+            ],
+            "chosenOptionId": "1",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593865",
+                "4058593866",
+                "4058593867",
+                "4058593868"
+            ],
+            "actualChoosenOption": 3
+        },
+        {
+            "text": "Q.41Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591243Option 1 ID :4058593935Option 2 ID :4058593934Option 3 ID :4058593933Option 4 ID :4058593936Status :AnsweredChosen Option :2",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591243",
+            "optionIds": [
+                "4058593935",
+                "4058593934",
+                "4058593933",
+                "4058593936"
+            ],
+            "chosenOptionId": "2",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593933",
+                "4058593934",
+                "4058593935",
+                "4058593936"
+            ],
+            "actualChoosenOption": 2
+        },
+        {
+            "text": "Q.42Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591238Option 1 ID :4058593915Option 2 ID :4058593914Option 3 ID :4058593913Option 4 ID :4058593916Status :AnsweredChosen Option :3",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591238",
+            "optionIds": [
+                "4058593915",
+                "4058593914",
+                "4058593913",
+                "4058593916"
+            ],
+            "chosenOptionId": "3",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593913",
+                "4058593914",
+                "4058593915",
+                "4058593916"
+            ],
+            "actualChoosenOption": 1
+        },
+        {
+            "text": "Q.43Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591232Option 1 ID :4058593891Option 2 ID :4058593892Option 3 ID :4058593890Option 4 ID :4058593889Status :Marked For ReviewChosen Option :3",
+            "questionType": 1,
+            "answerStatus": 0,
+            "questionId": "4058591232",
+            "optionIds": [
+                "4058593891",
+                "4058593892",
+                "4058593890",
+                "4058593889"
+            ],
+            "chosenOptionId": null,
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593889",
+                "4058593890",
+                "4058593891",
+                "4058593892"
+            ],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.44Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591234Option 1 ID :4058593899Option 2 ID :4058593897Option 3 ID :4058593898Option 4 ID :4058593900Status :AnsweredChosen Option :3",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591234",
+            "optionIds": [
+                "4058593899",
+                "4058593897",
+                "4058593898",
+                "4058593900"
+            ],
+            "chosenOptionId": "3",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593897",
+                "4058593898",
+                "4058593899",
+                "4058593900"
+            ],
+            "actualChoosenOption": 2
+        },
+        {
+            "text": "Q.45Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591244Option 1 ID :4058593940Option 2 ID :4058593938Option 3 ID :4058593939Option 4 ID :4058593937Status :Not AnsweredChosen Option : --",
+            "questionType": 1,
+            "answerStatus": 0,
+            "questionId": "4058591244",
+            "optionIds": [
+                "4058593940",
+                "4058593938",
+                "4058593939",
+                "4058593937"
+            ],
+            "chosenOptionId": null,
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593937",
+                "4058593938",
+                "4058593939",
+                "4058593940"
+            ],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.46Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591227Option 1 ID :4058593869Option 2 ID :4058593872Option 3 ID :4058593871Option 4 ID :4058593870Status :Not AnsweredChosen Option : --",
+            "questionType": 1,
+            "answerStatus": 0,
+            "questionId": "4058591227",
+            "optionIds": [
+                "4058593869",
+                "4058593872",
+                "4058593871",
+                "4058593870"
+            ],
+            "chosenOptionId": null,
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593869",
+                "4058593870",
+                "4058593871",
+                "4058593872"
+            ],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.47Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591233Option 1 ID :4058593893Option 2 ID :4058593895Option 3 ID :4058593894Option 4 ID :4058593896Status :Not AnsweredChosen Option : --",
+            "questionType": 1,
+            "answerStatus": 0,
+            "questionId": "4058591233",
+            "optionIds": [
+                "4058593893",
+                "4058593895",
+                "4058593894",
+                "4058593896"
+            ],
+            "chosenOptionId": null,
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593893",
+                "4058593894",
+                "4058593895",
+                "4058593896"
+            ],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.48Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591230Option 1 ID :4058593883Option 2 ID :4058593882Option 3 ID :4058593881Option 4 ID :4058593884Status :Not AnsweredChosen Option : --",
+            "questionType": 1,
+            "answerStatus": 0,
+            "questionId": "4058591230",
+            "optionIds": [
+                "4058593883",
+                "4058593882",
+                "4058593881",
+                "4058593884"
+            ],
+            "chosenOptionId": null,
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593881",
+                "4058593882",
+                "4058593883",
+                "4058593884"
+            ],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.49Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591228Option 1 ID :4058593876Option 2 ID :4058593875Option 3 ID :4058593874Option 4 ID :4058593873Status :Not AnsweredChosen Option : --",
+            "questionType": 1,
+            "answerStatus": 0,
+            "questionId": "4058591228",
+            "optionIds": [
+                "4058593876",
+                "4058593875",
+                "4058593874",
+                "4058593873"
+            ],
+            "chosenOptionId": null,
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593873",
+                "4058593874",
+                "4058593875",
+                "4058593876"
+            ],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.50Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591237Option 1 ID :4058593909Option 2 ID :4058593912Option 3 ID :4058593910Option 4 ID :4058593911Status :AnsweredChosen Option :4",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591237",
+            "optionIds": [
+                "4058593909",
+                "4058593912",
+                "4058593910",
+                "4058593911"
+            ],
+            "chosenOptionId": "4",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593909",
+                "4058593910",
+                "4058593911",
+                "4058593912"
+            ],
+            "actualChoosenOption": 3
+        },
+        {
+            "text": "Q.51Given Answer : -- Question Type :SAQuestion ID :4058591245Status :Not Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591245",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "--",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.52Given Answer : -- Question Type :SAQuestion ID :4058591248Status :Not Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591248",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "--",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.53Given Answer : -- Question Type :SAQuestion ID :4058591254Status :Not Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591254",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "--",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.54Given Answer : -- Question Type :SAQuestion ID :4058591251Status :Not Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591251",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "--",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.55Given Answer :2Question Type :SAQuestion ID :4058591252Status :Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591252",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "2",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.56Given Answer :420Question Type :SAQuestion ID :4058591249Status :Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591249",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "420",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.57Given Answer : -- Question Type :SAQuestion ID :4058591253Status :Not Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591253",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "--",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.58Given Answer :6Question Type :SAQuestion ID :4058591250Status :Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591250",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "6",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.59Given Answer : -- Question Type :SAQuestion ID :4058591246Status :Not Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591246",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "--",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.60Given Answer : -- Question Type :SAQuestion ID :4058591247Status :Not Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591247",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "--",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.61Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591272Option 1 ID :4058594021Option 2 ID :4058594019Option 3 ID :4058594022Option 4 ID :4058594020Status :Marked For ReviewChosen Option :1",
+            "questionType": 1,
+            "answerStatus": 0,
+            "questionId": "4058591272",
+            "optionIds": [
+                "4058594021",
+                "4058594019",
+                "4058594022",
+                "4058594020"
+            ],
+            "chosenOptionId": null,
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058594019",
+                "4058594020",
+                "4058594021",
+                "4058594022"
+            ],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.62Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591258Option 1 ID :4058593963Option 2 ID :4058593964Option 3 ID :4058593965Option 4 ID :4058593966Status :AnsweredChosen Option :1",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591258",
+            "optionIds": [
+                "4058593963",
+                "4058593964",
+                "4058593965",
+                "4058593966"
+            ],
+            "chosenOptionId": "1",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593963",
+                "4058593964",
+                "4058593965",
+                "4058593966"
+            ],
+            "actualChoosenOption": 1
+        },
+        {
+            "text": "Q.63Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591264Option 1 ID :4058593989Option 2 ID :4058593988Option 3 ID :4058593987Option 4 ID :4058593990Status :AnsweredChosen Option :2",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591264",
+            "optionIds": [
+                "4058593989",
+                "4058593988",
+                "4058593987",
+                "4058593990"
+            ],
+            "chosenOptionId": "2",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593987",
+                "4058593988",
+                "4058593989",
+                "4058593990"
+            ],
+            "actualChoosenOption": 2
+        },
+        {
+            "text": "Q.64Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591256Option 1 ID :4058593957Option 2 ID :4058593955Option 3 ID :4058593956Option 4 ID :4058593958Status :Marked For ReviewChosen Option :3",
+            "questionType": 1,
+            "answerStatus": 0,
+            "questionId": "4058591256",
+            "optionIds": [
+                "4058593957",
+                "4058593955",
+                "4058593956",
+                "4058593958"
+            ],
+            "chosenOptionId": null,
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593955",
+                "4058593956",
+                "4058593957",
+                "4058593958"
+            ],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.65Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591265Option 1 ID :4058593992Option 2 ID :4058593993Option 3 ID :4058593991Option 4 ID :4058593994Status :Not Attempted and Marked For ReviewChosen Option : --",
+            "questionType": 1,
+            "answerStatus": 0,
+            "questionId": "4058591265",
+            "optionIds": [
+                "4058593992",
+                "4058593993",
+                "4058593991",
+                "4058593994"
+            ],
+            "chosenOptionId": null,
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593991",
+                "4058593992",
+                "4058593993",
+                "4058593994"
+            ],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.66Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591273Option 1 ID :4058594024Option 2 ID :4058594023Option 3 ID :4058594025Option 4 ID :4058594026Status :Marked For ReviewChosen Option :3",
+            "questionType": 1,
+            "answerStatus": 0,
+            "questionId": "4058591273",
+            "optionIds": [
+                "4058594024",
+                "4058594023",
+                "4058594025",
+                "4058594026"
+            ],
+            "chosenOptionId": null,
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058594023",
+                "4058594024",
+                "4058594025",
+                "4058594026"
+            ],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.67Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591257Option 1 ID :4058593960Option 2 ID :4058593962Option 3 ID :4058593961Option 4 ID :4058593959Status :AnsweredChosen Option :1",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591257",
+            "optionIds": [
+                "4058593960",
+                "4058593962",
+                "4058593961",
+                "4058593959"
+            ],
+            "chosenOptionId": "1",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593959",
+                "4058593960",
+                "4058593961",
+                "4058593962"
+            ],
+            "actualChoosenOption": 2
+        },
+        {
+            "text": "Q.68Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591260Option 1 ID :4058593971Option 2 ID :4058593972Option 3 ID :4058593974Option 4 ID :4058593973Status :AnsweredChosen Option :4",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591260",
+            "optionIds": [
+                "4058593971",
+                "4058593972",
+                "4058593974",
+                "4058593973"
+            ],
+            "chosenOptionId": "4",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593971",
+                "4058593972",
+                "4058593973",
+                "4058593974"
+            ],
+            "actualChoosenOption": 3
+        },
+        {
+            "text": "Q.69Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591259Option 1 ID :4058593968Option 2 ID :4058593967Option 3 ID :4058593969Option 4 ID :4058593970Status :AnsweredChosen Option :2",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591259",
+            "optionIds": [
+                "4058593968",
+                "4058593967",
+                "4058593969",
+                "4058593970"
+            ],
+            "chosenOptionId": "2",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593967",
+                "4058593968",
+                "4058593969",
+                "4058593970"
+            ],
+            "actualChoosenOption": 1
+        },
+        {
+            "text": "Q.70Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591263Option 1 ID :4058593983Option 2 ID :4058593986Option 3 ID :4058593985Option 4 ID :4058593984Status :AnsweredChosen Option :2",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591263",
+            "optionIds": [
+                "4058593983",
+                "4058593986",
+                "4058593985",
+                "4058593984"
+            ],
+            "chosenOptionId": "2",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593983",
+                "4058593984",
+                "4058593985",
+                "4058593986"
+            ],
+            "actualChoosenOption": 4
+        },
+        {
+            "text": "Q.71Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591261Option 1 ID :4058593977Option 2 ID :4058593976Option 3 ID :4058593975Option 4 ID :4058593978Status :AnsweredChosen Option :3",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591261",
+            "optionIds": [
+                "4058593977",
+                "4058593976",
+                "4058593975",
+                "4058593978"
+            ],
+            "chosenOptionId": "3",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593975",
+                "4058593976",
+                "4058593977",
+                "4058593978"
+            ],
+            "actualChoosenOption": 1
+        },
+        {
+            "text": "Q.72Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591268Option 1 ID :4058594003Option 2 ID :4058594005Option 3 ID :4058594004Option 4 ID :4058594006Status :AnsweredChosen Option :3",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591268",
+            "optionIds": [
+                "4058594003",
+                "4058594005",
+                "4058594004",
+                "4058594006"
+            ],
+            "chosenOptionId": "3",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058594003",
+                "4058594004",
+                "4058594005",
+                "4058594006"
+            ],
+            "actualChoosenOption": 2
+        },
+        {
+            "text": "Q.73Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591262Option 1 ID :4058593982Option 2 ID :4058593979Option 3 ID :4058593981Option 4 ID :4058593980Status :Not Attempted and Marked For ReviewChosen Option : --",
+            "questionType": 1,
+            "answerStatus": 0,
+            "questionId": "4058591262",
+            "optionIds": [
+                "4058593982",
+                "4058593979",
+                "4058593981",
+                "4058593980"
+            ],
+            "chosenOptionId": null,
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593979",
+                "4058593980",
+                "4058593981",
+                "4058593982"
+            ],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.74Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591271Option 1 ID :4058594015Option 2 ID :4058594018Option 3 ID :4058594017Option 4 ID :4058594016Status :AnsweredChosen Option :4",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591271",
+            "optionIds": [
+                "4058594015",
+                "4058594018",
+                "4058594017",
+                "4058594016"
+            ],
+            "chosenOptionId": "4",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058594015",
+                "4058594016",
+                "4058594017",
+                "4058594018"
+            ],
+            "actualChoosenOption": 2
+        },
+        {
+            "text": "Q.75Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591266Option 1 ID :4058593998Option 2 ID :4058593997Option 3 ID :4058593995Option 4 ID :4058593996Status :AnsweredChosen Option :4",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591266",
+            "optionIds": [
+                "4058593998",
+                "4058593997",
+                "4058593995",
+                "4058593996"
+            ],
+            "chosenOptionId": "4",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593995",
+                "4058593996",
+                "4058593997",
+                "4058593998"
+            ],
+            "actualChoosenOption": 2
+        },
+        {
+            "text": "Q.76Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591270Option 1 ID :4058594011Option 2 ID :4058594014Option 3 ID :4058594013Option 4 ID :4058594012Status :Not Attempted and Marked For ReviewChosen Option : --",
+            "questionType": 1,
+            "answerStatus": 0,
+            "questionId": "4058591270",
+            "optionIds": [
+                "4058594011",
+                "4058594014",
+                "4058594013",
+                "4058594012"
+            ],
+            "chosenOptionId": null,
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058594011",
+                "4058594012",
+                "4058594013",
+                "4058594014"
+            ],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.77Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591267Option 1 ID :4058593999Option 2 ID :4058594001Option 3 ID :4058594000Option 4 ID :4058594002Status :AnsweredChosen Option :4",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591267",
+            "optionIds": [
+                "4058593999",
+                "4058594001",
+                "4058594000",
+                "4058594002"
+            ],
+            "chosenOptionId": "4",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593999",
+                "4058594000",
+                "4058594001",
+                "4058594002"
+            ],
+            "actualChoosenOption": 4
+        },
+        {
+            "text": "Q.78Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591274Option 1 ID :4058594030Option 2 ID :4058594027Option 3 ID :4058594028Option 4 ID :4058594029Status :Not Attempted and Marked For ReviewChosen Option : --",
+            "questionType": 1,
+            "answerStatus": 0,
+            "questionId": "4058591274",
+            "optionIds": [
+                "4058594030",
+                "4058594027",
+                "4058594028",
+                "4058594029"
+            ],
+            "chosenOptionId": null,
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058594027",
+                "4058594028",
+                "4058594029",
+                "4058594030"
+            ],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.79Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591269Option 1 ID :4058594009Option 2 ID :4058594007Option 3 ID :4058594008Option 4 ID :4058594010Status :AnsweredChosen Option :2",
+            "questionType": 1,
+            "answerStatus": 1,
+            "questionId": "4058591269",
+            "optionIds": [
+                "4058594009",
+                "4058594007",
+                "4058594008",
+                "4058594010"
+            ],
+            "chosenOptionId": "2",
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058594007",
+                "4058594008",
+                "4058594009",
+                "4058594010"
+            ],
+            "actualChoosenOption": 1
+        },
+        {
+            "text": "Q.80Options1. 2. 3. 4. Question Type :MCQQuestion ID :4058591255Option 1 ID :4058593952Option 2 ID :4058593954Option 3 ID :4058593951Option 4 ID :4058593953Status :Not AnsweredChosen Option : --",
+            "questionType": 1,
+            "answerStatus": 0,
+            "questionId": "4058591255",
+            "optionIds": [
+                "4058593952",
+                "4058593954",
+                "4058593951",
+                "4058593953"
+            ],
+            "chosenOptionId": null,
+            "givenAnswer": null,
+            "sortedOptions": [
+                "4058593951",
+                "4058593952",
+                "4058593953",
+                "4058593954"
+            ],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.81Given Answer :400.8Question Type :SAQuestion ID :4058591279Status :Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591279",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "400.8",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.82Given Answer : -- Question Type :SAQuestion ID :4058591281Status :Not Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591281",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "--",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.83Given Answer : -- Question Type :SAQuestion ID :4058591275Status :Not Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591275",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "--",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.84Given Answer : -- Question Type :SAQuestion ID :4058591278Status :Not Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591278",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "--",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.85Given Answer :2Question Type :SAQuestion ID :4058591282Status :Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591282",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "2",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.86Given Answer : -- Question Type :SAQuestion ID :4058591280Status :Not Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591280",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "--",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.87Given Answer : -- Question Type :SAQuestion ID :4058591284Status :Not Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591284",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "--",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.88Given Answer :4.88Question Type :SAQuestion ID :4058591277Status :Marked For Review",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591277",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "4.88",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.89Given Answer :5Question Type :SAQuestion ID :4058591283Status :Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591283",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "5",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        },
+        {
+            "text": "Q.90Given Answer : -- Question Type :SAQuestion ID :4058591276Status :Not Answered",
+            "questionType": 0,
+            "answerStatus": 0,
+            "questionId": "4058591276",
+            "optionIds": [],
+            "chosenOptionId": null,
+            "givenAnswer": "--",
+            "sortedOptions": [],
+            "actualChoosenOption": null
+        }
+    ]
+}
