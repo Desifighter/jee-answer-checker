@@ -25,8 +25,8 @@ class QuestionParser {
   }
 
   getAnswerStatus() {
-    const match = this.text.match(/Status :AnsweredChosen Option :(\d+)/);
-    return match ? 1 : 0;
+    const match = this.getChosenOptionId();
+    return match == null ? 0 : 1;
   }
 
   getQuestionId() {
@@ -45,7 +45,7 @@ class QuestionParser {
   }
 
   getChosenOptionId() {
-    const match = this.text.match(/Status :AnsweredChosen Option :(\d+)/);
+    const match = this.text.match(/Chosen Option :(\d+)/);
     return match ? match[1] : null;
   }
 
@@ -61,7 +61,7 @@ class QuestionParser {
 export const landingPageController = async (req, res) => {
   try {
     const { url } = req.body;
-    console.log(url);
+    // console.log(url);
     const response = await axios.get(url);
     const html = response.data;
     const $ = cheerio.load(html);
@@ -84,9 +84,10 @@ export const landingPageController = async (req, res) => {
         parser.answerStatus === 1
           ? Number(parser.optionIds[Number(parser.chosenOptionId) - 1])
           : null;
-      parser.text = "";
+      // parser.text = "";
       finalArr.push(parser);
     });
+    //console.log(finalArr);
 
     const workbook = xlsx.readFile("answer.xlsx"); // Or exceljs.readFileSync('path/to/your/file.xlsx')
     const sheetName = workbook.SheetNames[0]; // Assume the first sheet
@@ -104,7 +105,7 @@ export const landingPageController = async (req, res) => {
     let correctCountMCQ = 0;
     const map = new Map();
 
-    // console.log(data);
+    //console.log(data);
     for (const row of data) {
       map.set(row["Question Number"], row["Correct Options/Answers"]);
       // console.log(row["Question Number"]);
@@ -120,7 +121,7 @@ export const landingPageController = async (req, res) => {
         }
       } else {
         const check = (one, two) => {
-          console.log("one  :",one,"  two : ",two);
+          //console.log("one  :", one, "  two : ", two);
           if (two == null) {
             return false;
           }
@@ -145,6 +146,7 @@ export const landingPageController = async (req, res) => {
         }
       }
     }
+
     // console.log(
     //   totalMCQ,
     //   "   ",
@@ -160,17 +162,23 @@ export const landingPageController = async (req, res) => {
     //   row.clientAnswer
     // );
 
+    const mat = mathSA > 5 ? 5 : mathSA;
+    const phy = phySA > 5 ? 5 : phySA;
+    const che = chemSA > 5 ? 5 : chemSA;
+    const incorrect = totalAnsweredMCQ - correctCountMCQ;
+
     res.status(200).send({
       success: true,
       result: {
         totalMCQ,
         totalAnsweredMCQ,
         correctCountMCQ,
-        incorrect: totalAnsweredMCQ - correctCountMCQ,
-        mathSA: (mathSA>5)?5:mathSA,
-        phySA: (phySA>5)?5:phySA,
-        chemSA: (chemSA>5)?5:chemSA,
-        
+        incorrect,
+        mathSA: mat,
+        phySA: phy,
+        chemSA: che,
+        finalResult:
+          correctCountMCQ * 4 - incorrect + mat * 4 + phy * 4 + che * 4,
       },
       // finalArr,
     });
