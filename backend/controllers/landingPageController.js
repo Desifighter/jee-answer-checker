@@ -1,7 +1,6 @@
 import axios from "axios";
 import * as cheerio from "cheerio";
 import xlsx from "xlsx";
-
 class QuestionParser {
   constructor(text) {
     this.text = text;
@@ -84,10 +83,8 @@ export const landingPageController = async (req, res) => {
         answerStatus: parser.answerStatus,
       });
     });
-    console.log(finalArr);
-
-    console.log(day + shift + ".xlsx");
-    const workbook = xlsx.readFile(day + shift + ".xlsx"); // Or exceljs.readFileSync('path/to/your/file.xlsx')
+    
+    const workbook = xlsx.readFile(`./exels/${day}${shift}.xlsx`); // Or exceljs.readFileSync('path/to/your/file.xlsx')
     const sheetName = workbook.SheetNames[0]; // Assume the first sheet
     const worksheet = workbook.Sheets[sheetName];
     const data = xlsx.utils.sheet_to_json(worksheet); // Or exceljs.Worksheet#getData() for full details
@@ -150,7 +147,7 @@ export const landingPageController = async (req, res) => {
           mathMeMCQAttempt++;
         }
 
-        console.log(row.clientAnswer, "   ", map.get(row.questionId));
+        // console.log(row.clientAnswer, "   ", map.get(row.questionId));
         if (row.clientAnswer === map.get(row.questionId)) {
           mathMeMCQCorrect++;
         }
@@ -161,7 +158,7 @@ export const landingPageController = async (req, res) => {
         if (!(row.givenAnswer === "--")) {
           mathMeNumericalAttempt++;
         }
-        console.log(row.givenAnswer, "   ", map.get(row.questionId));
+        // console.log(row.givenAnswer, "   ", map.get(row.questionId));
         if (row.givenAnswer === map.get(row.questionId)) {
           mathMeNumericalCorrect++;
         }
@@ -172,7 +169,7 @@ export const landingPageController = async (req, res) => {
         if (answerStatusCheck(row.answerStatus)) {
           physicsMeMCQAttempt++;
         }
-        console.log(row.clientAnswer, "   ", map.get(row.questionId));
+        // console.log(row.clientAnswer, "   ", map.get(row.questionId));
         if (row.clientAnswer === map.get(row.questionId)) {
           phyiscsMeMCQCorrect++;
         }
@@ -182,7 +179,7 @@ export const landingPageController = async (req, res) => {
         if (!(row.givenAnswer === "--")) {
           physicsMeNumericalAttempt++;
         }
-        console.log(row.givenAnswer, "   ", map.get(row.questionId));
+        // console.log(row.givenAnswer, "   ", map.get(row.questionId));
         if (row.givenAnswer === map.get(row.questionId)) {
           phyiscsMeNumericalCorrect++;
         }
@@ -193,7 +190,7 @@ export const landingPageController = async (req, res) => {
         if (answerStatusCheck(row.answerStatus)) {
           chemistyMeMCQAttempt++;
         }
-        console.log(row.clientAnswer, "   ", map.get(row.questionId));
+        // console.log(row.clientAnswer, "   ", map.get(row.questionId));
         if (row.clientAnswer === map.get(row.questionId)) {
           chemistryMeMCQCorrect++;
         }
@@ -203,7 +200,7 @@ export const landingPageController = async (req, res) => {
         if (!(row.givenAnswer === "--")) {
           chemistyMeNumericalAttempt++;
         }
-        console.log(row.givenAnswer, "   ", map.get(row.questionId));
+        // console.log(row.givenAnswer, "   ", map.get(row.questionId));
         if (row.givenAnswer === map.get(row.questionId)) {
           chemistryMeNumericalCorrect++;
         }
@@ -252,7 +249,6 @@ export const landingPageController = async (req, res) => {
         chemistyMeMCQAttempt,
       },
     });
-
   } catch (error) {
     console.log(error);
     res.status(400).send({
@@ -261,4 +257,3 @@ export const landingPageController = async (req, res) => {
     });
   }
 };
-
