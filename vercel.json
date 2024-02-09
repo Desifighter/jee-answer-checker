@@ -3,10 +3,6 @@
   "version": 2,
     "builds": [
   {
-    "src": "frontend/public", 
-    "use": "@vercel/static"
-  },
-  {
     "src": "backend/server.js", 
     "use": "@vercel/node"
   }
@@ -15,10 +11,6 @@
     {
       "source": "/api/(.*)",
       "destination": "backend/server.js"
-    },
-    {
-      "source": "src/*",
-      "destination": "frontend/src/index.html"
     }
   ]
 }
