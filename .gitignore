@@ -11,6 +11,7 @@ lerna-debug.log*
 
 node_modules
 client/node_modules
+controllers/dasdmpa
 dist
 dist-ssr
 *.local

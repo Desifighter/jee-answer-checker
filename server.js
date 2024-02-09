@@ -21,6 +21,9 @@ app.use(morgan('dev'));
 
 //routes
 app.use('/api/v1',homeRoute);
+app.get('/',(req,res)=>{
+  res.send({message:"Hi Bro "});
+})
 
 
 

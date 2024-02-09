@@ -46,3 +46,55 @@ let mathSA = 0;
     chemTotalCorrect:0,
     chemMcqIncorrect:0,
     score:0,
+
+     {console.log("Total questions :", 90);
+    console.log(
+      "Attempted :",
+      mathMeMCQAttempt +
+        physicsMeMCQAttempt +
+        chemistyMeMCQAttempt +
+        mathMeNumericalAttempt +
+        physicsMeNumericalAttempt +
+        chemistyMeNumericalAttempt
+    );
+
+    console.log(
+      "Maths total correct : ",
+      mathMeMCQCorrect + mathMeNumericalCorrect
+    );
+    console.log("Maths mcq incorrect : ", mathMeMCQAttempt - mathMeMCQCorrect);
+
+    console.log(
+      "phy total correct : ",
+      phyiscsMeMCQCorrect + phyiscsMeNumericalCorrect
+    );
+    console.log(
+      "phy mcq incorrect : ",
+      physicsMeMCQAttempt - phyiscsMeMCQCorrect
+    );
+
+    console.log(
+      "chem total correct : ",
+      chemistryMeMCQCorrect + chemistryMeNumericalCorrect
+    );
+    console.log(
+      "chem mcq incorrect : ",
+      chemistyMeMCQAttempt - chemistryMeMCQCorrect
+    );
+
+    console.log(
+      "Total score : ",
+      (mathMeMCQCorrect +
+        mathMeNumericalCorrect +
+        phyiscsMeMCQCorrect +
+        phyiscsMeNumericalCorrect +
+        chemistryMeMCQCorrect +
+        chemistryMeNumericalCorrect) *
+        4 -
+        (mathMeMCQAttempt -
+          mathMeMCQCorrect +
+          physicsMeMCQAttempt -
+          phyiscsMeMCQCorrect +
+          chemistyMeMCQAttempt -
+          chemistryMeMCQCorrect)
+    );}
