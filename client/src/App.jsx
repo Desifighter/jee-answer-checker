@@ -63,21 +63,20 @@ function App() {
   const [open, setOpen] = useState(false);
 
   const [obData, setObData] = useState({
-    totalMCQ: 0,
-    totalAnsweredMCQ: 0,
-    correctCountMCQ: 0,
-    incorrect: 0,
-    mathSA: 0,
-    phySA: 0,
-    chemSA: 0,
-    finalResult: 0,
-    mathMCQ: 0,
-    phyMCQ: 0,
-    cheMCQ: 0,
-    attemMathSA: 0,
-    attemPhySA: 0,
-    attemChemSA: 0,
-    attemtedArray: [0, 0, 0],
+    attempted: 0,
+    mathTotalCorrect: 0,
+    mathMcqIncorrect: 0,
+    phyTotalCorrect: 0,
+    phyMcqIncorrect: 0,
+    chemTotalCorrect: 0,
+    chemMcqIncorrect: 0,
+    score: 0,
+    mathMeNumericalAttempt: 0,
+    physicsMeNumericalAttempt: 0,
+    chemistyMeNumericalAttempt: 0,
+    mathMeMCQAttempt: 0,
+    physicsMeMCQAttempt: 0,
+    chemistyMeMCQAttempt: 0,
   });
 
   const getData = async () => {

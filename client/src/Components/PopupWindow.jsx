@@ -17,21 +17,21 @@ const PopupWindow = ({ objectData, open, setOpen, setObData }) => {
 
   const handleClose = () => {
     setObData({
-      totalMCQ: 0,
-      totalAnsweredMCQ: 0,
-      correctCountMCQ: 0,
-      incorrect: 0,
-      mathSA: 0,
-      phySA: 0,
-      chemSA: 0,
-      finalResult: 0,
-      mathMCQ: 0,
-      phyMCQ: 0,
-      cheMCQ: 0,
-      attemMathSA: 0,
-      attemPhySA: 0,
-      attemChemSA: 0,
-      attemtedArray: [0, 0, 0],
+      attempted: 0,
+      mathTotalCorrect: 0,
+      mathMcqIncorrect: 0,
+      phyTotalCorrect: 0,
+      phyMcqIncorrect: 0,
+      chemTotalCorrect: 0,
+      chemMcqIncorrect: 0,
+      score: 0,
+      mathMeNumericalAttempt:0,
+      physicsMeNumericalAttempt:0,
+      chemistyMeNumericalAttempt:0,
+
+      mathMeMCQAttempt:0,
+      physicsMeMCQAttempt:0,
+      chemistyMeMCQAttempt:0,
     });
     setOpen(false);
   };
@@ -72,24 +72,22 @@ const PopupWindow = ({ objectData, open, setOpen, setObData }) => {
           <Paper elevation={3} sx={{ padding: 2, marginBottom: 2 }}>
             <Typography variant="body1">Total Questions: {90}</Typography>
             <Typography variant="body1">
-              Answered Questions:{" "}
-              {objectData.totalAnsweredMCQ +
-                objectData.attemMathSA +
-                objectData.attemPhySA +
-                objectData.attemChemSA}
+              Answered Questions: {objectData.attempted}
             </Typography>
             <Typography variant="body1">
               Correct Answers:{" "}
-              {objectData.correctCountMCQ +
-                objectData.mathSA +
-                objectData.chemSA +
-                objectData.phySA}
+              {objectData.mathTotalCorrect +
+                objectData.phyTotalCorrect +
+                objectData.chemTotalCorrect}
             </Typography>
             <Typography variant="body1">
-              Incorrect Answers(Only MCQ): {objectData.incorrect}
+              Incorrect Answers(Only MCQ):{" "}
+              {objectData.mathMcqIncorrect +
+                objectData.phyTotalCorrect +
+                objectData.chemMcqIncorrect}
             </Typography>
             <Typography variant="body1">
-              Your total score: {objectData.finalResult}
+              Your total score: {objectData.score}
             </Typography>
           </Paper>
           <Typography variant="h6" gutterBottom>
@@ -98,35 +96,31 @@ const PopupWindow = ({ objectData, open, setOpen, setObData }) => {
           <Paper elevation={3} sx={{ padding: 2 }}>
             <Typography variant="body1">
               Attempted Que. in Math:{" "}
-              {objectData.attemtedArray[0] + objectData.attemMathSA}
+              {objectData.mathMeNumericalAttempt + objectData.mathMeMCQAttempt}
             </Typography>
             <Typography variant="body1">
               Maths Score:{" "}
-              {objectData.mathSA * 4 +
-                objectData.mathMCQ * 4 -
-                (objectData.attemtedArray[0] - objectData.mathMCQ)}
+              {objectData.mathTotalCorrect * 4 - objectData.mathMcqIncorrect}
             </Typography>
 
             <Typography variant="body1">
               Attempted Que. in Physics:
-              {objectData.attemtedArray[1] + objectData.attemPhySA}
+              {objectData.physicsMeNumericalAttempt +
+                objectData.physicsMeMCQAttempt}
             </Typography>
             <Typography variant="body1">
               Physics Score:
-              {objectData.phySA *4+
-                objectData.phyMCQ * 4 -
-                (objectData.attemtedArray[1] - objectData.phyMCQ)}
+              {objectData.phyTotalCorrect * 4 - objectData.phyMcqIncorrect}
             </Typography>
 
             <Typography variant="body1">
               Attempted Que. in Chemistry:{" "}
-              {objectData.attemtedArray[2] + objectData.attemChemSA}
+              {objectData.chemistyMeNumericalAttempt +
+                objectData.chemistyMeMCQAttempt}
             </Typography>
             <Typography variant="body1">
               Chemistry Score:{" "}
-              {objectData.chemSA * 4 +
-                objectData.cheMCQ * 4 -
-                (objectData.attemtedArray[2] - objectData.cheMCQ)}
+              {objectData.chemTotalCorrect * 4 - objectData.chemMcqIncorrect}
             </Typography>
           </Paper>
         </DialogContent>

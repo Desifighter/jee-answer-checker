@@ -2,7 +2,6 @@ import axios from "axios";
 import * as cheerio from "cheerio";
 import xlsx from "xlsx";
 
-
 class QuestionParser {
   constructor(text) {
     this.text = text;
@@ -61,168 +60,343 @@ class QuestionParser {
 export const landingPageController = async (req, res) => {
   try {
     const { url, day, shift } = req.body;
-    
+
     // console.log(url);
     const response = await axios.get(url);
     const html = response.data;
     const $ = cheerio.load(html);
     const menuItems = $(".rw");
-    
+
     let finalArr = [];
-    
+
     menuItems.each((index, element) => {
       const menuItem = $(element).text().trim();
       const parser = new QuestionParser(menuItem);
-      // parser.sortedOptions = [...parser.optionIds].sort();
-      // parser.actualChoosenOption =
-      //   parser.answerStatus === 1
-      //     ? parser.sortedOptions.indexOf(
-        //         parser.optionIds[Number(parser.chosenOptionId) - 1]
-        //       ) + 1
-        //     : null;
-        
-        parser.clientAnswer =
+      parser.clientAnswer =
         parser.answerStatus === 1
-        ? Number(parser.optionIds[Number(parser.chosenOptionId) - 1])
-        : null;
-        // parser.text = "";
-        finalArr.push(parser);
+          ? parser.optionIds[Number(parser.chosenOptionId) - 1]
+          : null;
+
+      finalArr.push({
+        questionId: parser.questionId,
+        clientAnswer: parser.clientAnswer,
+        givenAnswer: parser.givenAnswer,
+        answerStatus: parser.answerStatus,
       });
-    // console.log(finalArr);
-    
-    console.log(day + toString(shift) + ".xlsx");
-    const workbook = xlsx.readFile(day+shift+".xlsx"); // Or exceljs.readFileSync('path/to/your/file.xlsx')
+    });
+    console.log(finalArr);
+
+    console.log(day + shift + ".xlsx");
+    const workbook = xlsx.readFile(day + shift + ".xlsx"); // Or exceljs.readFileSync('path/to/your/file.xlsx')
     const sheetName = workbook.SheetNames[0]; // Assume the first sheet
     const worksheet = workbook.Sheets[sheetName];
     const data = xlsx.utils.sheet_to_json(worksheet); // Or exceljs.Worksheet#getData() for full details
 
-    let mathSA = 0;
-    let attemMathSA = 0;
-    let attemPhySA = 0;
-    let phySA = 0;
-    let attemChemSA = 0;
-    let chemSA = 0;
-    let mathMCQ = 0;
-    let phyMCQ = 0;
-    let cheMCQ = 0;
-    let attemtedArray = [0, 0, 0];
+    // let mathSA = 0;
+    // let attemMathSA = 0;
+    // let attemPhySA = 0;
+    // let phySA = 0;
+    // let attemChemSA = 0;
+    // let chemSA = 0;
+    // let mathMCQ = 0;
+    // let phyMCQ = 0;
+    // let cheMCQ = 0;
+    // let attemtedArray = [0, 0, 0];
+    // let index = 0;
+    // let totalMCQ = 60;
+    // let totalAnsweredMCQ = 0;
+    // let correctCountMCQ = 0;
+
+    let mathMeTotalAttempt = 0;
+    let physicsMeTotalAttempt = 0;
+    let chemistyMeTotalAttempt = 0;
+
+    let mathMeNumericalAttempt = 0;
+    let physicsMeNumericalAttempt = 0;
+    let chemistyMeNumericalAttempt = 0;
+
+    let mathMeMCQAttempt = 0;
+    let physicsMeMCQAttempt = 0;
+    let chemistyMeMCQAttempt = 0;
+
+    let mathMeMCQCorrect = 0;
+    let phyiscsMeMCQCorrect = 0;
+    let chemistryMeMCQCorrect = 0;
+
+    let mathMeNumericalCorrect = 0;
+    let phyiscsMeNumericalCorrect = 0;
+    let chemistryMeNumericalCorrect = 0;
+
+    const map = new Map();
+    // console.log(data);
+    for (const row of data) {
+      map.set(row["Question Number"], row["Correct Options/Answers"]);
+    }
+    // console.log(map);
+
+    const answerStatusCheck = (answerStatus) => {
+      return answerStatus === 1 ? true : false;
+    };
+    const mcqCheck = (first, second) => {};
 
     let index = 0;
 
-    let totalMCQ = 60;
-    let totalAnsweredMCQ = 0;
-    let correctCountMCQ = 0;
-    const map = new Map();
-
-    //console.log(data);
-    for (const row of data) {
-      map.set(row["Question Number"], row["Correct Options/Answers"]);
-      // console.log(row["Question Number"]);
-      // console.log(row["Correct Options/Answers"]);
-    }
-    console.log(map);
-
     for (const row of finalArr) {
       index++;
-      if (row.questionType === 1 && row.answerStatus === 1) {
-        totalAnsweredMCQ++;
-
-        if (index >= 1 && index <= 30) {
-          attemtedArray[0]++;
-        } else if (index >= 31 && index <= 60) {
-          attemtedArray[1]++;
-        } else if (index >= 61 && index <= 90) {
-          attemtedArray[2]++;
+      //Math Section
+      //Math Mcq
+      if (index >= 1 && index <= 20) {
+        if (answerStatusCheck(row.answerStatus)) {
+          mathMeMCQAttempt++;
         }
-        if (map.get(Number(row.questionId)) === row.clientAnswer) {
-          if (index >= 1 && index <= 30) {
-            mathMCQ++;
-          } else if (index >= 31 && index <= 60) {
-            phyMCQ++;
-          } else if (index >= 61 && index <= 90) {
-            cheMCQ++;
-          }
-          correctCountMCQ++;
-        }
-      } else {
-        const check = (one, two) => {
-          //console.log("one  :", one, "  two : ", two);
-          if (two == null) {
-            return false;
-          }
-          if (one == two) {
-            return true;
-          }
-          return false;
-        };
-        const attempt = (rower) => {
-          if (rower.givenAnswer == "--" || rower.givenAnswer == null) {
-            return false;
-          }
-          return true;
-        };
 
-        if (index >= 21 && index <= 30) {
-          attemMathSA = attempt(row) ? attemMathSA + 1 : attemMathSA;
-          mathSA = check(map.get(Number(row.questionId)), row.givenAnswer)
-            ? mathSA + 1
-            : mathSA;
-        } else if (index >= 51 && index <= 60) {
-          attemPhySA = attempt(row) ? attemPhySA + 1 : attemPhySA;
-          phySA = check(map.get(Number(row.questionId)), row.givenAnswer)
-            ? phySA + 1
-            : phySA;
-        } else if (index >= 81 && index <= 90) {
-          attemChemSA = attempt(row) ? attemChemSA + 1 : attemChemSA;
-          chemSA = check(map.get(Number(row.questionId)), row.givenAnswer)
-            ? chemSA + 1
-            : chemSA;
+        console.log(row.clientAnswer, "   ", map.get(row.questionId));
+        if (row.clientAnswer === map.get(row.questionId)) {
+          mathMeMCQCorrect++;
+        }
+      }
+      //Math sa
+      //
+      else if (index >= 21 && index <= 30) {
+        if (!(row.givenAnswer === "--")) {
+          mathMeNumericalAttempt++;
+        }
+        console.log(row.givenAnswer, "   ", map.get(row.questionId));
+        if (row.givenAnswer === map.get(row.questionId)) {
+          mathMeNumericalCorrect++;
+        }
+      }
+      //Physics sections
+      //physics mcq
+      else if (index >= 31 && index <= 50) {
+        if (answerStatusCheck(row.answerStatus)) {
+          physicsMeMCQAttempt++;
+        }
+        console.log(row.clientAnswer, "   ", map.get(row.questionId));
+        if (row.clientAnswer === map.get(row.questionId)) {
+          phyiscsMeMCQCorrect++;
+        }
+      }
+      //physics sa
+      else if (index >= 51 && index <= 60) {
+        if (!(row.givenAnswer === "--")) {
+          physicsMeNumericalAttempt++;
+        }
+        console.log(row.givenAnswer, "   ", map.get(row.questionId));
+        if (row.givenAnswer === map.get(row.questionId)) {
+          phyiscsMeNumericalCorrect++;
+        }
+      }
+      //chemistry section
+      //chem Mcq
+      else if (index >= 61 && index <= 80) {
+        if (answerStatusCheck(row.answerStatus)) {
+          chemistyMeMCQAttempt++;
+        }
+        console.log(row.clientAnswer, "   ", map.get(row.questionId));
+        if (row.clientAnswer === map.get(row.questionId)) {
+          chemistryMeMCQCorrect++;
+        }
+      }
+      //chem sa
+      else if (index >= 81 && index <= 90) {
+        if (!(row.givenAnswer === "--")) {
+          chemistyMeNumericalAttempt++;
+        }
+        console.log(row.givenAnswer, "   ", map.get(row.questionId));
+        if (row.givenAnswer === map.get(row.questionId)) {
+          chemistryMeNumericalCorrect++;
         }
       }
     }
 
-    // console.log(
-    //   totalMCQ,
-    //   "   ",
-    //   totalAnsweredMCQ,
-    //   "   ",
-    //   correctCountMCQ,
-    //   "  ",
-    //   totalAnsweredMCQ - correctCountMCQ
-    // );
-    // console.log(
-    //   map.get(Number(row.questionId)),
-    //   "      ",
-    //   row.clientAnswer
-    // );
+    console.log("Total questions :", 90);
+    console.log(
+      "Attempted :",
+      mathMeMCQAttempt +
+        physicsMeMCQAttempt +
+        chemistyMeMCQAttempt +
+        mathMeNumericalAttempt +
+        physicsMeNumericalAttempt +
+        chemistyMeNumericalAttempt
+    );
 
-    const mat = mathSA > 5 ? 5 : mathSA;
-    const phy = phySA > 5 ? 5 : phySA;
-    const che = chemSA > 5 ? 5 : chemSA;
-    const incorrect = totalAnsweredMCQ - correctCountMCQ;
+    console.log(
+      "Maths total correct : ",
+      mathMeMCQCorrect + mathMeNumericalCorrect
+    );
+    console.log("Maths mcq incorrect : ", mathMeMCQAttempt - mathMeMCQCorrect);
+
+    console.log(
+      "phy total correct : ",
+      phyiscsMeMCQCorrect + phyiscsMeNumericalCorrect
+    );
+    console.log(
+      "phy mcq incorrect : ",
+      physicsMeMCQAttempt - phyiscsMeMCQCorrect
+    );
+
+    console.log(
+      "chem total correct : ",
+      chemistryMeMCQCorrect + chemistryMeNumericalCorrect
+    );
+    console.log(
+      "chem mcq incorrect : ",
+      chemistyMeMCQAttempt - chemistryMeMCQCorrect
+    );
+
+    console.log(
+      "Total score : ",
+      (mathMeMCQCorrect +
+        mathMeNumericalCorrect +
+        phyiscsMeMCQCorrect +
+        phyiscsMeNumericalCorrect +
+        chemistryMeMCQCorrect +
+        chemistryMeNumericalCorrect) *
+        4 -
+        (mathMeMCQAttempt -
+          mathMeMCQCorrect +
+          physicsMeMCQAttempt -
+          phyiscsMeMCQCorrect +
+          chemistyMeMCQAttempt -
+          chemistryMeMCQCorrect)
+    );
 
     res.status(200).send({
       success: true,
       result: {
-        totalMCQ,
-        totalAnsweredMCQ,
-        correctCountMCQ,
-        incorrect,
-        mathSA: mat,
-        phySA: phy,
-        chemSA: che,
-        finalResult:
-          correctCountMCQ * 4 - incorrect + mat * 4 + phy * 4 + che * 4,
-        mathMCQ,
-        phyMCQ,
-        cheMCQ,
-        attemMathSA,
-        attemPhySA,
-        attemChemSA,
-        attemtedArray,
+        attempted:
+          mathMeMCQAttempt +
+          physicsMeMCQAttempt +
+          chemistyMeMCQAttempt +
+          mathMeNumericalAttempt +
+          physicsMeNumericalAttempt +
+          chemistyMeNumericalAttempt,
+        mathTotalCorrect: mathMeMCQCorrect + mathMeNumericalCorrect,
+        mathMcqIncorrect: mathMeMCQAttempt - mathMeMCQCorrect,
+
+        phyTotalCorrect: phyiscsMeMCQCorrect + phyiscsMeNumericalCorrect,
+        phyMcqIncorrect: physicsMeMCQAttempt - phyiscsMeMCQCorrect,
+
+        chemTotalCorrect: chemistryMeMCQCorrect + chemistryMeNumericalCorrect,
+        chemMcqIncorrect: chemistyMeMCQAttempt - chemistryMeMCQCorrect,
+        score:
+          (mathMeMCQCorrect +
+            mathMeNumericalCorrect +
+            phyiscsMeMCQCorrect +
+            phyiscsMeNumericalCorrect +
+            chemistryMeMCQCorrect +
+            chemistryMeNumericalCorrect) *
+            4 -
+          (mathMeMCQAttempt -
+            mathMeMCQCorrect +
+            physicsMeMCQAttempt -
+            phyiscsMeMCQCorrect +
+            chemistyMeMCQAttempt -
+            chemistryMeMCQCorrect),
+
+        mathMeNumericalAttempt,
+        physicsMeNumericalAttempt,
+        chemistyMeNumericalAttempt,
+
+        mathMeMCQAttempt,
+        physicsMeMCQAttempt,
+        chemistyMeMCQAttempt,
       },
-      // finalArr,
     });
+
+    // // for (const row of finalArr) {
+    // //   index++;
+
+    // //   if (row.questionType === 1 && row.answerStatus === 1) {
+    // //     totalAnsweredMCQ++;
+
+    //     if (index >= 1 && index <= 30) {
+    //       attemtedArray[0]++;
+    //     } else if (index >= 31 && index <= 60) {
+    //       attemtedArray[1]++;
+    //     } else if (index >= 61 && index <= 90) {
+    //       attemtedArray[2]++;
+    //     }
+    // //     console.log(
+    // //       row.questionId,
+    // //       "  ",
+    // //       Number(row.questionId),
+    // //       "  ",
+    // //       map.get(Number(row.questionId)),
+    // //       "   ",
+    // //       map.get(row.questionId),
+    // //       "  ",
+    // //       row.clientAnswer
+    // //     );
+    // //     if (map.get(row.questionId) == row.clientAnswer) {
+    // //       if (index >= 1 && index <= 30) {
+    // //         mathMCQ++;
+    // //       } else if (index >= 31 && index <= 60) {
+    // //         phyMCQ++;
+    // //       } else if (index >= 61 && index <= 90) {
+    // //         cheMCQ++;
+    // //       }
+    // //       correctCountMCQ++;
+    // //     }
+    // //   } else {
+    // //     const check = (one, two) => {
+    // //       //console.log("one  :", one, "  two : ", two);
+    // //       if (two == null) {
+    // //         return false;
+    // //       }
+    // //       if (one == two) {
+    // //         return true;
+    // //       }
+    // //       return false;
+    // //     };
+    // //     const attempt = (rower) => {
+    // //       if (rower.givenAnswer == "--" || rower.givenAnswer == null) {
+    // //         return false;
+    // //       }
+    // //       return true;
+    // //     };
+
+    // //     if (index >= 21 && index <= 30) {
+    // //       attemMathSA = attempt(row) ? attemMathSA + 1 : attemMathSA;
+    // //       mathSA = check(map.get(Number(row.questionId)), row.givenAnswer)
+    // //         ? mathSA + 1
+    // //         : mathSA;
+    // //     } else if (index >= 51 && index <= 60) {
+    // //       attemPhySA = attempt(row) ? attemPhySA + 1 : attemPhySA;
+    // //       phySA = check(map.get(Number(row.questionId)), row.givenAnswer)
+    // //         ? phySA + 1
+    // //         : phySA;
+    // //     } else if (index >= 81 && index <= 90) {
+    // //       attemChemSA = attempt(row) ? attemChemSA + 1 : attemChemSA;
+    // //       chemSA = check(map.get(Number(row.questionId)), row.givenAnswer)
+    // //         ? chemSA + 1
+    // //         : chemSA;
+    // //     }
+    // //   }
+    // // }
+
+    // // console.log(
+    // //   totalMCQ,
+    // //   "   ",
+    // //   totalAnsweredMCQ,
+    // //   "   ",
+    // //   correctCountMCQ,
+    // //   "  ",
+    // //   totalAnsweredMCQ - correctCountMCQ
+    // // );
+    // // console.log(
+    // //   map.get(Number(row.questionId)),
+    // //   "      ",
+    // //   row.clientAnswer
+    // // );
+
+    // // const mat = mathSA > 5 ? 5 : mathSA;
+    // // const phy = phySA > 5 ? 5 : phySA;
+    // // const che = chemSA > 5 ? 5 : chemSA;
+    // // const incorrect = totalAnsweredMCQ - correctCountMCQ;
+
+    // finalArr,
   } catch (error) {
     console.log(error);
     res.status(400).send({
