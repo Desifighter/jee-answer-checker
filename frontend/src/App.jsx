@@ -81,7 +81,7 @@ function App() {
 
   const getData = async () => {
     try {
-      const { data } = await axios.post("http://localhost:8080/api/v1/home", {
+      const { data } = await axios.post(`${import.meta.env.VITE_BACKEND}/api/v1/home`, {
         url: link,
         day: day[0],
         shift: (shift =="Shift-1")?0:1,
