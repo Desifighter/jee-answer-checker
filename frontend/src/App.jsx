@@ -83,6 +83,10 @@ function App() {
 
   const getData = async () => {
     try {
+
+      console.log("Link",link);
+      console.log("day", day[0]);
+      console.log("shift", shift == "Shift-1" ? 0 : 1);
       
       const { data } = await axios.post(`${import.meta.env.VITE_BACKEND}/api/v1/home`, {
         url: link,
