@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import { styled } from "@mui/system";
 import PopupWindow from "./Components/PopupWindow";
+import SimpleBackdrop from "./Components/SimpleBackdrop";
 import axios from "axios";
 
 const Container = styled("div")({
@@ -61,6 +62,7 @@ function App() {
   const [day, setDay] = useState(1);
   const [shift, setShift] = useState("Shift-1");
   const [open, setOpen] = useState(false);
+  const [backdrop,setBackdrop] = useState(false);
 
   const [obData, setObData] = useState({
     attempted: 0,
@@ -81,6 +83,7 @@ function App() {
 
   const getData = async () => {
     try {
+      
       const { data } = await axios.post(`${import.meta.env.VITE_BACKEND}/api/v1/home`, {
         url: link,
         day: day[0],
@@ -90,14 +93,17 @@ function App() {
       console.log(data.result);
     } catch (error) {
       console.log(error);
+      
     }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setBackdrop(true);
     // Do something with the input values
     await getData();
 
+    setBackdrop(false);
     setOpen(true);
     // console.log(link, day, shift);
   };
@@ -161,6 +167,7 @@ function App() {
         objectData={obData}
         setObData={setObData}
       />
+      <SimpleBackdrop backdrop={backdrop}/>
     </>
   );
 }
