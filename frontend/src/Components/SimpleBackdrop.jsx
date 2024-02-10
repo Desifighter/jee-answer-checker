@@ -12,8 +12,11 @@ export default function SimpleBackdrop({backdrop}) {
     setOpen(true);
   };
 
+  // Backdrop test 
   return (
     <div>
+
+      
       <Backdrop
         sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
         open={backdrop}
